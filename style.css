@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+    --h4: hsl(279, 75%, 54%);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-color: var(--Light-pink);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.container>header {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container>header>img {
+    margin-right: 20px;
+    width: 35px;
+}
+
+.container>header>h1 {
+    font-size: 2.5rem;
+}
+
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+h4:hover {
+    color: var(--h4);
+    cursor: pointer;
+}
+
+p {
+    color: var(--Grayish-purple);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 375px) and (max-width:768px) {
+    .container {
+        width: 300px;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .container {
+        width: 350px;
+    }
+
+    header>img {
+        width: 300px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+
+    .container {
+        width: 400px;
+    }
+
+
+}
